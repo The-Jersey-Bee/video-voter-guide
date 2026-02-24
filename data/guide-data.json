@@ -1,0 +1,58 @@
+{
+  "election": {
+    "title": "Sample Election Video Voter Guide",
+    "intro_html": "<p>This is a demo voter guide. Replace this data with your own candidates and questions by editing your Google Sheet and running <code>npm run export-data</code>.</p>",
+    "newsletter_embed_id": "",
+    "plan_to_vote_url": "https://www.vote.org/",
+    "towns_url": "",
+    "filming_location_url": ""
+  },
+  "sections": [
+    { "id": "s_intro", "title": "Introduction", "description": "Meet the Candidates", "order": 1 },
+    { "id": "s_policy", "title": "Question", "description": "Key Policy Issue", "order": 2 },
+    { "id": "s_closing", "title": "Closing", "description": "Closing Statements", "order": 3 }
+  ],
+  "questions": [
+    {
+      "id": "q_intro",
+      "section_id": "s_intro",
+      "prompt": "Why are you running for office and what makes you the best candidate?",
+      "short_title": "Candidate Introduction",
+      "order": 1,
+      "slug": "introduction"
+    },
+    {
+      "id": "q_policy",
+      "section_id": "s_policy",
+      "prompt": "What is the most important policy issue facing our community and how would you address it?",
+      "short_title": "Key Policy",
+      "order": 1,
+      "slug": "policy"
+    },
+    {
+      "id": "q_closing",
+      "section_id": "s_closing",
+      "prompt": "What is the most important message you want voters to take away?",
+      "short_title": "Closing Statement",
+      "order": 1,
+      "slug": "closing"
+    }
+  ],
+  "candidates": [
+    { "id": "alex-rivera", "name": "Alex Rivera", "slug": "alex-rivera", "headshot_url": "", "order": 1, "longform_url": "", "participated": true },
+    { "id": "jordan-chen", "name": "Jordan Chen", "slug": "jordan-chen", "headshot_url": "", "order": 2, "longform_url": "", "participated": true },
+    { "id": "sam-okafor", "name": "Sam Okafor", "slug": "sam-okafor", "headshot_url": "", "order": 3, "longform_url": "", "participated": true },
+    { "id": "pat-williams", "name": "Pat Williams", "slug": "pat-williams", "headshot_url": "", "order": 4, "longform_url": "", "participated": false }
+  ],
+  "clips": [
+    { "id": "clip_intro_alex-rivera", "question_id": "q_intro", "candidate_id": "alex-rivera", "video_src": "", "poster_src": "", "captions_vtt_src": "", "transcript_text": "" },
+    { "id": "clip_intro_jordan-chen", "question_id": "q_intro", "candidate_id": "jordan-chen", "video_src": "", "poster_src": "", "captions_vtt_src": "", "transcript_text": "" },
+    { "id": "clip_intro_sam-okafor", "question_id": "q_intro", "candidate_id": "sam-okafor", "video_src": "", "poster_src": "", "captions_vtt_src": "", "transcript_text": "" },
+    { "id": "clip_policy_alex-rivera", "question_id": "q_policy", "candidate_id": "alex-rivera", "video_src": "", "poster_src": "", "captions_vtt_src": "", "transcript_text": "" },
+    { "id": "clip_policy_jordan-chen", "question_id": "q_policy", "candidate_id": "jordan-chen", "video_src": "", "poster_src": "", "captions_vtt_src": "", "transcript_text": "" },
+    { "id": "clip_policy_sam-okafor", "question_id": "q_policy", "candidate_id": "sam-okafor", "video_src": "", "poster_src": "", "captions_vtt_src": "", "transcript_text": "" },
+    { "id": "clip_closing_alex-rivera", "question_id": "q_closing", "candidate_id": "alex-rivera", "video_src": "", "poster_src": "", "captions_vtt_src": "", "transcript_text": "" },
+    { "id": "clip_closing_jordan-chen", "question_id": "q_closing", "candidate_id": "jordan-chen", "video_src": "", "poster_src": "", "captions_vtt_src": "", "transcript_text": "" },
+    { "id": "clip_closing_sam-okafor", "question_id": "q_closing", "candidate_id": "sam-okafor", "video_src": "", "poster_src": "", "captions_vtt_src": "", "transcript_text": "" }
+  ]
+}
