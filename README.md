@@ -94,10 +94,6 @@ See **[docs/AI_SETUP_GUIDE.md](docs/AI_SETUP_GUIDE.md)** for example prompts and
 - [Cloudflare Pages](https://pages.cloudflare.com/) (hosting)
 - [iframe-resizer](https://github.com/davidjbradshaw/iframe-resizer) (embed support)
 
-## Case Study
-
-See how The Jersey Bee used this template for the NJ-11 special election primary with 11 candidates: **[docs/CASE_STUDY.md](docs/CASE_STUDY.md)**
-
 ## Contributing
 
 See **[CONTRIBUTING.md](CONTRIBUTING.md)** for how to contribute.
