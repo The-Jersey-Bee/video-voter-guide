@@ -161,10 +161,10 @@ const App: React.FC = () => {
                   href={data.election.towns_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => handleExternalLinkClick('Towns in NJ-11', data.election.towns_url!)}
+                  onClick={() => handleExternalLinkClick('Towns in the district', data.election.towns_url!)}
                   className="bg-brand-white text-brand-secondary-dark border-2 border-brand-secondary-dark px-8 py-4 rounded-xl font-display font-extrabold hover:bg-brand-secondary-light transition-colors text-center md:text-left leading-tight md:leading-normal flex items-center justify-center gap-2"
               >
-                Towns in NJ-11 <ExternalLink size={18} className="flex-shrink-0" />
+                Towns in the district <ExternalLink size={18} className="flex-shrink-0" />
               </a>
             )}
             {data.election.filming_location_url && (
