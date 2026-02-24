@@ -16,6 +16,20 @@ root.style.setProperty('--color-brand-secondary-dark', siteConfig.colors.seconda
 root.style.setProperty('--font-display', `"${siteConfig.fonts.display}", sans-serif`);
 root.style.setProperty('--font-sans', `"${siteConfig.fonts.body}", sans-serif`);
 
+// Conditionally load GA4
+if (siteConfig.ga4MeasurementId) {
+  const gtagScript = document.createElement('script');
+  gtagScript.async = true;
+  gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${siteConfig.ga4MeasurementId}`;
+  document.head.appendChild(gtagScript);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(...args: any[]) { window.dataLayer!.push(args); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', siteConfig.ga4MeasurementId);
+}
+
 const rootElement = document.getElementById('root');
 if (!rootElement) {
   throw new Error("Could not find root element to mount to");
