@@ -1,5 +1,12 @@
 # Video Voter Guide
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![GitHub stars](https://img.shields.io/github/stars/The-Jersey-Bee/video-voter-guide?style=flat)](https://github.com/The-Jersey-Bee/video-voter-guide/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/The-Jersey-Bee/video-voter-guide)](https://github.com/The-Jersey-Bee/video-voter-guide/issues)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy%20to-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com/)
+
 An open-source, mobile-first video voter guide template for newsrooms and civic organizations. Film your candidate forum, upload the clips, and publish an interactive guide where voters watch each candidate answer key questions.
 
 **See it in action:** [NJ-11 Democratic Primary Candidates Guide](https://nj11.jerseybee.org) by The Jersey Bee
