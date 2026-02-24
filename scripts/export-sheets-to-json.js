@@ -8,7 +8,7 @@
  * Or if you have .env file with VITE_GOOGLE_SHEET_ID:
  *   node scripts/export-sheets-to-json.js
  *
- * This creates/updates: src/data/production-data.json
+ * This creates/updates: data/guide-data.json
  */
 
 const fs = require('fs');
@@ -101,6 +101,7 @@ async function exportData() {
       newsletter_embed_id: settings.newsletter_embed_id || '',
       plan_to_vote_url: settings.plan_to_vote_url || '',
       towns_url: settings.towns_url || '',
+      filming_location_url: settings.filming_location_url || '',
     };
 
     // Parse sections
@@ -161,7 +162,7 @@ async function exportData() {
     }
 
     // Write to JSON file
-    const outputPath = path.join(dataDir, 'production-data.json');
+    const outputPath = path.join(dataDir, 'guide-data.json');
     fs.writeFileSync(outputPath, JSON.stringify(appData, null, 2));
 
     console.log('');
@@ -174,8 +175,7 @@ async function exportData() {
     console.log(`  - ${candidates.length} candidates (${candidates.filter(c => c.participated).length} participating)`);
     console.log(`  - ${clips.length} clips`);
     console.log('');
-    console.log('To use static data in production:');
-    console.log('  Set USE_STATIC_DATA=true in your environment or .env file');
+    console.log('Run "npm run dev" to preview your guide locally.');
 
   } catch (error) {
     console.error('Failed to export data:', error.message);

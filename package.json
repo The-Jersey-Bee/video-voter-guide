@@ -1,7 +1,8 @@
 {
-  "name": "nj-11-special-election-video-voter-guide",
-  "private": true,
-  "version": "0.0.0",
+  "name": "video-voter-guide",
+  "version": "1.0.0",
+  "license": "GPL-3.0-only",
+  "description": "Open-source video voter guide template for newsrooms and civic organizations",
   "type": "module",
   "scripts": {
     "dev": "vite",
