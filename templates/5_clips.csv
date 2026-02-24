@@ -1,3 +1,2 @@
 id,question_id,candidate_id,video_src,poster_src,captions_vtt_src,transcript_text,duration_seconds,instagram_url,tiktok_url
-clip_intro_brendan-gill,q_intro,brendan-gill,https://your-r2-url.dev/intro_WEB_brendan-gill.mp4,,,,,
-clip_intro_analilia-mejia,q_intro,analilia-mejia,https://your-r2-url.dev/intro_WEB_analilia-mejia.mp4,,,,,
+clip_intro_candidate-1,q_intro,candidate-1,https://your-video-host.com/intro_candidate-1.mp4,,,,,,
