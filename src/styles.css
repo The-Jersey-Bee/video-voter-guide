@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Custom theme configuration */
+@theme {
+  /* Font families */
+  --font-sans: "Red Hat Text", sans-serif;
+  --font-display: "Red Hat Display", sans-serif;
+
+  /* Brand colors */
+  --color-brand-primary: #C06328;
+  --color-brand-primary-light: #DFAB40;
+  --color-brand-primary-dark: #6C2F09;
+  --color-brand-secondary: #789FD4;
+  --color-brand-secondary-light: #E1EBF9;
+  --color-brand-secondary-dark: #2B2E34;
+  --color-brand-text: #333333;
+  --color-brand-text-light: #666666;
+  --color-brand-background: #FBFBF8;
+  --color-brand-white: #FFFEFE;
+}
+
+/* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-background);
+  color: var(--color-brand-text);
+}
+
+/* Embed mode: disable ALL internal scrolling, let parent handle it */
+html.embed-mode,
+html.embed-mode body,
+html.embed-mode #root,
+html.embed-mode #root > div {
+  overflow: visible !important;
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  position: static !important;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Hide scrollbar for clean overlays */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Aspect ratio for vertical video */
+.aspect-v-video {
+  aspect-ratio: 9 / 16;
+}

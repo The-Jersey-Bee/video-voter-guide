@@ -1,0 +1,12 @@
+id,name,slug,headshot_url,order,longform_url,participated
+john-bartlet,John Bartlet,john-bartlet,,1,,TRUE
+zach-beecher,Zach Beecher,zach-beecher,,2,,TRUE
+j-l-cauvin,J-L Cauvin,j-l-cauvin,,3,,TRUE
+cammie-croft,Cammie Croft,cammie-croft,,4,,TRUE
+brendan-gill,Brendan Gill,brendan-gill,,5,,TRUE
+tom-malinowski,Tom Malinowski,tom-malinowski,,6,,TRUE
+analilia-mejia,Analilia Mejia,analilia-mejia,,7,,TRUE
+justin-strickland,Justin Strickland,justin-strickland,,8,,TRUE
+tahesha-way,Tahesha Way,tahesha-way,,9,,TRUE
+anna-williams,Anna Williams,anna-williams,,10,,TRUE
+jeff-grayzel,Jeff Grayzel,jeff-grayzel,,11,,FALSE

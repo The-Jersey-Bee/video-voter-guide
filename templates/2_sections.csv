@@ -1,0 +1,8 @@
+id,title,description,order
+s_intro,Introduction,Meet the Candidates,1
+s_cred,Lightning Round,Jersey Cred,2
+s_housing,Question,Housing,3
+s_jobs,Question,Jobs,4
+s_healthcare,Question,Healthcare,5
+s_other,Question,Other Policy,6
+s_closing,Closing,What Else Voters Should Know,7

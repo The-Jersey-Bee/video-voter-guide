@@ -1,0 +1,8 @@
+id,section_id,prompt,short_title,order,slug
+q_intro,s_intro,"Why are you running for Congress and what makes you the best candidate to represent the 11th District?",Candidate Introduction,1,introduction
+q_cred,s_cred,"What is your go-to breakfast sandwich and where do you get it?",Jersey Cred,1,cred
+q_housing,s_housing,"How will you address the rising cost of rent and homeownership in NJ-11?",Housing Affordability,1,housing
+q_jobs,s_jobs,"What is your plan to attract high-quality jobs and support small businesses in the district?",Jobs & Economy,1,jobs
+q_healthcare,s_healthcare,"How will you work to lower healthcare premiums and expand access to care for all residents?",Healthcare Access,1,healthcare
+q_other,s_other,"What other policy issue is most important to you and how would you address it in Congress?",Other Policy,1,other-policy
+q_closing,s_closing,"What is the most important message you want voters to take away from your campaign?",Closing Statement,1,closing
