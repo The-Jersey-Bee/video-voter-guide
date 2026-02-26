@@ -182,13 +182,27 @@ Add this to any page where you want the voter guide to appear:
 <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.9/js/iframeResizer.min.js"></script>
 <script>
   iFrameResize({
-    checkOrigin: false,
+    checkOrigin: ['https://your-project.pages.dev'],
     heightCalculationMethod: 'documentElementOffset'
   }, '#voter-guide');
 </script>
 ```
 
 The iframe will automatically resize to match the content height.
+
+## Workflow for Non-Technical Editors
+
+If you're an editor or content manager who doesn't use the command line, here's how to update the voter guide after initial setup:
+
+1. **Edit the Google Sheet** — Update candidate info, questions, or video URLs directly in the spreadsheet
+2. **Ask a developer to re-export** — They'll run `npm run export-data` and push the changes
+3. **Or use GitHub's web editor** — If the data file is small, you can edit `data/guide-data.json` directly on GitHub:
+   - Navigate to the file on GitHub
+   - Click the pencil icon to edit
+   - Make your changes and commit
+   - Cloudflare Pages will auto-deploy
+
+**Tip:** For a fully no-code workflow, pair the Google Sheet with a GitHub Action that auto-exports on a schedule or webhook trigger.
 
 ## Updating Content
 
