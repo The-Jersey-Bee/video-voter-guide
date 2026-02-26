@@ -30,6 +30,11 @@ const config: SiteConfig = {
 
   // Base URL where your videos are hosted (no trailing slash)
   videoBaseUrl: '',
+
+  // Allowed parent origins for postMessage when embedded in an iframe.
+  // Use ['*'] to allow any origin (less secure, but backward compatible).
+  // For production, list specific origins: ['https://example.com']
+  embedParentOrigins: ['*'],
 };
 
 export default config;

@@ -1,4 +1,5 @@
 import { useEffect, useCallback, useState } from 'react';
+import { sendToParent } from '../lib/postMessage';
 
 /**
  * Hook to handle iframe resize communication with parent window.
@@ -38,13 +39,10 @@ export function useIframeResize() {
     const height = getContentHeight();
 
     // Send postMessage for custom listeners
-    window.parent.postMessage(
-      {
-        type: 'responsive-iframe-resize',
-        height: height,
-      },
-      '*'
-    );
+    sendToParent({
+      type: 'responsive-iframe-resize',
+      height: height,
+    });
 
     // Also set data attribute for alternative reading methods
     document.body.setAttribute('data-iframe-height', String(height));

@@ -2,7 +2,6 @@
   "election": {
     "title": "Sample Election Video Voter Guide",
     "intro_html": "<p>This is a demo voter guide. Replace this data with your own candidates and questions by editing your Google Sheet and running <code>npm run export-data</code>.</p>",
-    "newsletter_embed_id": "",
     "plan_to_vote_url": "https://www.vote.org/",
     "towns_url": "",
     "filming_location_url": ""

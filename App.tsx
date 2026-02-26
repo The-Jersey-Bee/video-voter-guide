@@ -6,6 +6,7 @@ import { useIframeResize } from './hooks/useIframeResize';
 import { useAppData } from './hooks/useAppData';
 import { ArrowDown, ExternalLink, Loader2 } from 'lucide-react';
 import { analytics } from './lib/analytics';
+import { sanitizeHtml } from './lib/sanitize';
 
 const App: React.FC = () => {
   const { data, loading, error } = useAppData();
@@ -133,13 +134,6 @@ const App: React.FC = () => {
     <div className="pb-8 bg-brand-background font-sans">
       <main className="max-w-4xl mx-auto px-4">
         <section className="mb-16">
-          <h1 className="text-[1.9rem] md:text-[3.2rem] font-display font-semibold text-brand-secondary-dark mb-6 leading-tight">
-            {data.election.title}
-          </h1>
-          <div 
-            className="text-lg md:text-xl text-brand-text mb-8 leading-relaxed font-sans"
-            dangerouslySetInnerHTML={{ __html: data.election.intro_html }} 
-          />
           <div className="flex flex-wrap gap-4">
             <button 
                 onClick={handleWatchClick}
@@ -182,7 +176,7 @@ const App: React.FC = () => {
         </section>
 
         <section id="questions" className="space-y-6">
-          {data.sections
+          {[...data.sections]
             .sort((a, b) => a.order - b.order)
             .map((section) => (
               <QuestionSection
