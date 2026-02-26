@@ -59,6 +59,35 @@ If you already have a web server or CDN, just upload your MP4 files to a public 
 | **Resolution** | 1080 x 1920 |
 | **File size** | 10-30 MB per 1-2 minute clip |
 
+### Compressing with FFmpeg
+
+[FFmpeg](https://ffmpeg.org/) is a free command-line tool for video processing. Here are some useful recipes:
+
+**Compress a video to target ~15 MB for a 90-second clip:**
+
+```bash
+ffmpeg -i input.mp4 -vcodec libx264 -crf 28 -preset slow -vf "scale=1080:1920" -acodec aac -b:a 128k output.mp4
+```
+
+**Batch-compress all MP4 files in a folder:**
+
+```bash
+for f in raw/*.mp4; do
+  ffmpeg -i "$f" -vcodec libx264 -crf 28 -preset slow -vf "scale=1080:1920" -acodec aac -b:a 128k "compressed/$(basename "$f")"
+done
+```
+
+**Extract a poster image (first frame):**
+
+```bash
+ffmpeg -i input.mp4 -vframes 1 -q:v 2 poster.jpg
+```
+
+**Key flags:**
+- `-crf 28`: Quality level (lower = higher quality, larger file; 23-30 is good for web)
+- `-preset slow`: Better compression (use `medium` for faster encoding)
+- `-vf "scale=1080:1920"`: Force 1080x1920 vertical resolution
+
 ### Tips
 
 - **Vertical video is key.** The player is designed for 9:16 portrait video. Horizontal video will work but won't fill the player.
