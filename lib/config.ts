@@ -17,6 +17,7 @@ export interface SiteConfig {
   ga4MeasurementId: string | null;
   googleSheetId: string;
   videoBaseUrl: string;
+  embedParentOrigins: string[];
 }
 
 // Re-export the user's config

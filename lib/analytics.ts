@@ -3,6 +3,8 @@
  * Also sends events to parent window for iframe embeds
  */
 
+import { sendToParent } from './postMessage';
+
 declare global {
   interface Window {
     gtag?: (...args: any[]) => void;
@@ -22,16 +24,14 @@ export function trackEvent(eventName: string, params?: EventParams) {
   }
 
   // Also send to parent window for iframe embeds
-  if (typeof window !== 'undefined' && window.parent !== window) {
-    try {
-      window.parent.postMessage({
-        type: 'voter-guide-analytics',
-        event: eventName,
-        params,
-      }, '*');
-    } catch (e) {
-      // Ignore cross-origin errors
-    }
+  try {
+    sendToParent({
+      type: 'voter-guide-analytics',
+      event: eventName,
+      params,
+    });
+  } catch (e) {
+    // Ignore cross-origin errors
   }
 }
 
