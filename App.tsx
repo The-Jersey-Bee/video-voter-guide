@@ -134,13 +134,6 @@ const App: React.FC = () => {
     <div className="pb-8 bg-brand-background font-sans">
       <main className="max-w-4xl mx-auto px-4">
         <section className="mb-16">
-          <h1 className="text-[1.9rem] md:text-[3.2rem] font-display font-semibold text-brand-secondary-dark mb-6 leading-tight">
-            {data.election.title}
-          </h1>
-          <div 
-            className="text-lg md:text-xl text-brand-text mb-8 leading-relaxed font-sans"
-            dangerouslySetInnerHTML={{ __html: sanitizeHtml(data.election.intro_html) }} 
-          />
           <div className="flex flex-wrap gap-4">
             <button 
                 onClick={handleWatchClick}
