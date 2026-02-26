@@ -98,7 +98,6 @@ async function exportData() {
     const election = {
       title: settings.title || '',
       intro_html: settings.intro_html || '',
-      newsletter_embed_id: settings.newsletter_embed_id || '',
       plan_to_vote_url: settings.plan_to_vote_url || '',
       towns_url: settings.towns_url || '',
       filming_location_url: settings.filming_location_url || '',

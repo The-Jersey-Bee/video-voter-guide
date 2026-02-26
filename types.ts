@@ -2,7 +2,6 @@
 export interface ElectionInfo {
   title: string;
   intro_html: string;
-  newsletter_embed_id: string;
   plan_to_vote_url: string;
   towns_url?: string;
   filming_location_url?: string;
