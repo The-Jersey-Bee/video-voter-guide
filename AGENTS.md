@@ -18,12 +18,15 @@ An open-source, mobile-first video voter guide template. Built with React 19, Ty
 
 | Directory | Purpose |
 |-----------|---------|
-| `components/` | React components: `PlayerOverlay.tsx`, `QuestionSection.tsx` |
+| `components/` | `QuestionSection.tsx` (accordion sections with candidate grids) |
+| `components/player/` | Video player: `PlayerOverlay.tsx`, `VideoSlide.tsx`, `ShareSheet.tsx`, `QuestionOverlay.tsx`, `types.ts` |
 | `hooks/` | `useAppData.ts` (loads guide data), `useIframeResize.ts` (embed support) |
-| `lib/` | `analytics.ts` (GA4 events), `config.ts` (config types), `googleSheets.ts` (Sheets API client) |
+| `lib/` | `analytics.ts` (GA4 events), `config.ts` (config types), `postMessage.ts` (iframe messaging), `sanitize.ts` (HTML sanitization), `validation.ts` (Zod schemas) |
+| `public/` | `favicon.svg`, `robots.txt`, `_headers` (Cloudflare CSP headers) |
 | `scripts/` | `export-sheets-to-json.js` (Google Sheets → JSON export) |
 | `src/` | `styles.css` (Tailwind theme with CSS custom properties) |
 | `templates/` | CSV templates for Google Sheets tabs |
+| `tests/` | `lib/postMessage.test.ts`, `lib/sanitize.test.ts`, `lib/validation.test.ts` |
 
 ## Commands
 
@@ -32,6 +35,8 @@ An open-source, mobile-first video voter guide template. Built with React 19, Ty
 | `npm run dev` | Start dev server at localhost:3000 |
 | `npm run build` | Production build → `dist/` |
 | `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run test` | Run Vitest unit tests |
 | `npm run export-data` | Export Google Sheets → `data/guide-data.json` |
 
 ## Config System

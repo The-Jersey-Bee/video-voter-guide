@@ -20,6 +20,18 @@ npm run dev
 
 The dev server runs at `http://localhost:3000`. The app loads demo data by default.
 
+## CI Checks
+
+Pull requests run lint, tests, and build automatically via GitHub Actions. Run these locally before submitting:
+
+```bash
+npm run lint
+npm run test
+npm run build
+```
+
+All three must pass for your PR to be merged.
+
 ## Code Style
 
 - **React 19** with functional components and hooks

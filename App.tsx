@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { QuestionSection } from './components/QuestionSection';
-import { PlayerOverlay } from './components/PlayerOverlay';
+import { PlayerOverlay } from './components/player/PlayerOverlay';
 import { useIframeResize } from './hooks/useIframeResize';
 import { useAppData } from './hooks/useAppData';
 import { ArrowDown, ExternalLink, Loader2 } from 'lucide-react';

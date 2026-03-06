@@ -74,7 +74,11 @@ Every push to `main` triggers an automatic deploy.
   allow="web-share"
 ></iframe>
 <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.9/js/iframeResizer.min.js"></script>
-<script>iFrameResize({ checkOrigin: false }, 'iframe')</script>
+<script>
+  iFrameResize({
+    checkOrigin: ['https://your-project.pages.dev']
+  }, 'iframe');
+</script>
 ```
 
 See the [Setup Guide](docs/SETUP_GUIDE.md#embedding) for details.
